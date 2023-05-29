@@ -87,8 +87,19 @@ body{
     display: flex;
     flex-direction: column;
     
+    border: 1px solid black;    
 }
 
+.ilustracao-gamer{
+    width: 50%;
+}
+.logo-qualidade{
+    width: 15%;
+}
 
+.titulo-logo{
+    display: flex;
+    flex-direction: column;
+}
 
 

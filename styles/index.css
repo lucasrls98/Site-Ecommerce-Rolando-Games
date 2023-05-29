@@ -86,13 +86,12 @@ body{
 .section-qualidade{
     display: flex;
     flex-direction: column;
+    margin: 100px;
     
     border: 1px solid black;    
 }
 
-.ilustracao-gamer{
-    width: 50%;
-}
+
 .logo-qualidade{
     width: 15%;
 }
@@ -100,6 +99,24 @@ body{
 .titulo-logo{
     display: flex;
     flex-direction: column;
+    padding: 10% 0 0 10%;
+    width: 50%;
 }
 
+.estrelas-gamer{
+    display: flex;  
+    justify-content: space-between;  
+}
+.estrelas-img{
+    order: 1;
+    align-self: center;
+    width: 412px;
+    height: 101px;
+
+} 
+.ilustracao-gamer{
+    order: 2;
+    width: 50%;
+    
+}
 

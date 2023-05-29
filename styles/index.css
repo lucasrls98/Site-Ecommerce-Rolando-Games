@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Press+Start+2P&family=Roboto&display=swap');
+
+:root {
+    --cor-background: #AAE9F4;
+    --cor-paragrafo: #000000;
+    --cor-contraste: #F5F5F5;
+    --cor-primaria: #30b8de;
+    --cor-secundaria: #ffd91d;
+    --cor-destaque:#F47D25;
+    --font-titulo:'Lato', sans-serif;
+    --font-texto:'Roboto', sans-serif;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-texto);
+}
+
+
+body{
+    background-color: var(--cor-background);
+}
+
+
+.nav-principal{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+}
+
+
+.menu-header{
+    text-decoration: none;
+    color: var(--cor-paragrafo);
+    font-family: var(--font-titulo);
+    font-weight: 700;
+    font-size: 1.5rem;      
+}
+
+.menu-header:hover{
+    transform: scale(1.05);
+    color: var(--cor-destaque);
+    transition: 0.3s;
+}
+
+.ilustracao-ecommerce{
+    width: 45%;
+    align-items: center;
+    margin: 50px;
+    
+}
+
+.section-historia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;    
+}
+.historia-textos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    width: 55%;
+    gap: 1.5rem;   
+}
+
+.historia-textos>h1{
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    font-size: 2.25rem;
+    color: var(--cor-destaque);    
+}
+.historia-textos > h2{
+    font-size: 1.88rem;
+    font-family: var(--font-titulo);    
+}
+
+.historia-textos > p{
+    font-size: 2rem;
+}
+
+.section-qualidade{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+

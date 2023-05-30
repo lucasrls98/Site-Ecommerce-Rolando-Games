@@ -1,122 +1,200 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Press+Start+2P&family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Press+Start+2P&family=Roboto&display=swap");
 
 :root {
-    --cor-background: #AAE9F4;
-    --cor-paragrafo: #000000;
-    --cor-contraste: #F5F5F5;
-    --cor-primaria: #30b8de;
-    --cor-secundaria: #ffd91d;
-    --cor-destaque:#F47D25;
-    --font-titulo:'Lato', sans-serif;
-    --font-texto:'Roboto', sans-serif;
-
+  --cor-background: #aae9f4;
+  --cor-paragrafo: #000000;
+  --cor-contraste: #f5f5f5;
+  --cor-primaria: #30b8de;
+  --cor-secundaria: #ffd91d;
+  --cor-destaque: #f47d25;
+  --font-titulo: "Lato", sans-serif;
+  --font-texto: "Roboto", sans-serif;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: var(--font-texto);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-texto);
 }
 
-
-body{
-    background-color: var(--cor-background);
+body {
+  background-color: var(--cor-background);
 }
 
-
-.nav-principal{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center; 
+.nav-principal {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-
-.menu-header{
-    text-decoration: none;
-    color: var(--cor-paragrafo);
-    font-family: var(--font-titulo);
-    font-weight: 700;
-    font-size: 1.5rem;      
+.menu-header {
+  text-decoration: none;
+  color: var(--cor-paragrafo);
+  font-family: var(--font-titulo);
+  font-weight: 700;
+  font-size: 1.5rem;
 }
 
-.menu-header:hover{
-    transform: scale(1.05);
-    color: var(--cor-destaque);
-    transition: 0.3s;
+.menu-header:hover {
+  transform: scale(1.05);
+  color: var(--cor-destaque);
+  transition: 0.3s;
 }
 
-.ilustracao-ecommerce{
-    width: 45%;
-    align-items: center;
-    margin: 50px;
-    
+.ilustracao-ecommerce {
+  width: 45%;
+  align-items: center;
+  margin: 50px;
 }
 
-.section-historia{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;    
+.section-historia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
 }
-.historia-textos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;    
-    width: 55%;
-    gap: 1.5rem;   
-}
-
-.historia-textos>h1{
-    font-family: 'Press Start 2P', cursive;
-    text-align: center;
-    font-size: 2.25rem;
-    color: var(--cor-destaque);    
-}
-.historia-textos > h2{
-    font-size: 1.88rem;
-    font-family: var(--font-titulo);    
+.historia-textos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 55%;
+  gap: 1.5rem;
 }
 
-.historia-textos > p{
-    font-size: 2rem;
+.historia-textos > h1 {
+  font-family: "Press Start 2P", cursive;
+  text-align: center;
+  font-size: 2.25rem;
+  color: var(--cor-destaque);
+}
+.historia-textos > h2 {
+  font-size: 1.88rem;
+  font-family: var(--font-titulo);
 }
 
-.section-qualidade{
-    display: flex;
-    flex-direction: column;
-    margin: 100px;
-    
-    border: 1px solid black;    
+.historia-textos > p {
+  font-size: 2rem;
+}
+
+.section-qualidade {
+  display: flex;
+  flex-direction: column;
+  margin: 100px;
+
+  border: 1px solid black;
 }
 
 
-.logo-qualidade{
-    width: 15%;
+.logo-qualidade {
+  width: 15%;
 }
 
-.titulo-logo{
-    display: flex;
-    flex-direction: column;
-    padding: 10% 0 0 10%;
-    width: 50%;
+.titulo-logo {
+  display: flex;
+  flex-direction: column;
+  padding: 10% 0 0 10%;
+  width: 50%;
 }
 
-.estrelas-gamer{
-    display: flex;  
-    justify-content: space-between;  
+.estrelas-gamer {
+    display: flex;   
+    justify-content: space-between; 
 }
-.estrelas-img{
-    order: 1;
-    align-self: center;
-    width: 412px;
-    height: 101px;
-
-} 
-.ilustracao-gamer{
-    order: 2;
-    width: 50%;
-    
+.estrelas-img {
+  order: 2;
+  align-self: center;
+  width: 412px;
+  height: 101px;
+}
+.ilustracao-gamer {
+  order: 4;
+  width: 35%;
 }
 
+
+
+
+
+/* Botão compre aqui */
+.button1 {
+  position: absolute;
+  width: 311px;
+  left: 569px;
+  top: 1797px;
+
+  background: var(--cor-secundaria);
+  border: 3px solid var(--cor-destaque);
+  box-shadow: 5px 4px 4px #504e4e;
+  border-radius: 22px;
+
+  font-family: var(--font-texto);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 95px;
+  text-align: center;
+  color: #000000;
+}
+.button1:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+/* config do footer */
+.rodape {
+  margin-top: 20px;
+  /* text-align: center; */
+  background-color: var(--cor-primaria);
+  width: 100%;
+  position: absolute;
+  height: 120px;
+  top: 2026px;
+}
+.rodape p {
+  position: absolute;
+  width: 428px;
+  height: 29px;
+  left: 511px;
+  font-family: "Lato";
+  font-size: 24px;
+  line-height: 29px;
+  color: var(--cor-contraste);
+  margin-top: 45px;
+}
+.icone-whatsapp {
+  position: absolute;
+  height: 60px;
+  left: 303px;
+  margin-top: 30px;
+  /* background: url(/images/whatsapp\ 1.png); */
+}
+.icone-instagram {
+  position: absolute;
+  height: 60px;
+  left: 190px;
+  margin-top: 30px;
+  /* background: url(/images/instagram\ 1.png); */
+}
+.logo-footer {
+  position: absolute;
+  width: 80px;
+  left: 57px;
+  margin-top: 20px;
+  /* background: url(/images/logo\ 2.png); */
+}
+.rodape nav {
+  position: absolute;
+  height: 29px;
+  left: 1058px;
+  font: var(--font-texto);
+  font-size: 24px;
+  line-height: 29px;
+  padding: 45px;
+}
+.rodape nav a {
+  margin-right: 45px;
+  text-decoration: none;
+  color: #ffffff;
+}

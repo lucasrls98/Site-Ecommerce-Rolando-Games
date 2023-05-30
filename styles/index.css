@@ -81,26 +81,48 @@ body {
 .section-qualidade {
   display: flex;
   flex-direction: column;
-  margin: 100px;
-
+  margin: 180px;
+  border-radius: 10px;
   border: 1px solid black;
+  background-color: rgb(25, 150, 199);
 }
 
+.section-qualidade p{
+    font-family: var(--font-texto);
+    font-size: 32px;
+    padding-left: 2%;
+
+}
+.section-qualidade h2{
+    font-family: "Press Start 2P";
+    font-size: 38px;
+    font-weight: 300;
+    color: var(--cor-contraste)
+
+}
 
 .logo-qualidade {
-  width: 15%;
+  width: 25%;
 }
 
 .titulo-logo {
-  display: flex;
   flex-direction: column;
-  padding: 10% 0 0 10%;
-  width: 50%;
+  padding: 3% 3% 3% 3%;
+  width: 100%;
 }
+
+
+  .titulo-logo-esquerda {
+    display: flex;
+    align-items: center;
+    width: 50%;
+  }
+
 
 .estrelas-gamer {
     display: flex;   
     justify-content: space-between; 
+    padding-left: 65px;
 }
 .estrelas-img {
   order: 2;
@@ -108,9 +130,14 @@ body {
   width: 412px;
   height: 101px;
 }
+
+
 .ilustracao-gamer {
   order: 4;
-  width: 35%;
+  width: 30%;
+  position: absolute;
+  right: 15%;
+
 }
 
 
@@ -122,7 +149,7 @@ body {
   position: absolute;
   width: 311px;
   left: 569px;
-  top: 1797px;
+  top: 1597px;
 
   background: var(--cor-secundaria);
   border: 3px solid var(--cor-destaque);
@@ -150,7 +177,7 @@ body {
   width: 100%;
   position: absolute;
   height: 120px;
-  top: 2026px;
+  top: 1826px;
 }
 .rodape p {
   position: absolute;

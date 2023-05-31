@@ -210,3 +210,37 @@ body {
 }
 
 
+@media screen and (max-width: 1200px){
+  main{
+    padding: 10%;
+  }
+  .nav-principal{
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .ilustracao-ecommerce{
+    width: 100%;
+  }
+  
+  .historia-textos{
+    width: 400px;       
+  }
+
+  .historia-textos > h1{
+    font-size: 25px;    
+  }
+  
+  .historia-textos >h2{
+    font-size: 20px;
+  }
+  .historia-textos > p{
+    font-size: 17px;
+    padding: 10%;
+  }
+
+
+
+
+}

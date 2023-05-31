@@ -44,7 +44,7 @@ body {
 }
 
 .ilustracao-ecommerce {
-  width: 45%;
+  
   align-items: center;
   margin: 50px;
 }
@@ -54,6 +54,8 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 50px;
+  max-width: 1500px;
+  margin: auto;
 }
 .historia-textos {
   display: flex;
@@ -78,16 +80,148 @@ body {
   font-size: 2rem;
 }
 
-.section-qualidade {
+.section-qualidade{
+  background-color: var(--cor-primaria);
+  box-shadow: 12px 13px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+  width: 75rem;
+  height: 40.12rem;
+  margin: 6.25rem auto 5.62rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  max-width: 1650px;
+  
+}
+
+.titulo-logo-esquerda{
+  display: flex;  
+  align-items: center;
+}
+
+.titulo-logo-esquerda > h2{
+  transform: translateX(-2rem);
+  font-family: "Press Start 2P";
+  color: var(--cor-contraste);
+  font-size: 2.25rem;
+}
+
+.texto-estrela{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.texto-estrela > p{
+  margin-left: 65px;
+  
+}
+
+.excelencia-texto{
+  font-size: 1.75rem;
+  font-family: var(--font-texto);
+  color: var(--cor-paragrafo);
+}
+
+.estrelas-img{
+  width: 70%;
+}
+
+.separacao-botao{
+  width: 100%;
+  display: flex;
+  justify-content: center;  
+}
+
+.botao-comprar{
+  background: var(--cor-secundaria);
+  border: 3px solid var(--cor-destaque);
+  box-shadow: 5px 4px 4px #504e4e;
+  border-radius: 22px;
+  color: var(--cor-paragrafo);
+
+  font-family: var(--font-texto);
+  text-decoration: none;
+  text-align: center;
+  font-weight: 600;
+  font-size: 2.2rem;
+  width: 311px;
+  height: 95px;
+  padding: 1.5rem;
+  margin: 0 auto;
+
+}
+
+.botao-comprar:hover{
+  transform: scale(1.05);
+  transition: 0.3s;
+  background-color: var(--cor-destaque);
+  color: #f5f5f5;
+}
+
+.logo-footer{
+  cursor: pointer;
+}
+
+.rodape{
+  background-color: var(--cor-primaria);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  margin-top: 90px;
+}
+
+.redes-sociais{
+  width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.redes-sociais > a:hover{
+  transform: scale(1.1);
+  transition: 0.3s;
+  
+}
+
+.rodape > p{
+  font-family: var(--font-titulo);
+  font-size: 1.5rem;
+  color: var(--cor-contraste);
+}
+
+.rodape > nav{
+  display: flex;
+  width: 250px;
+  justify-content: space-between;  
+}
+
+.rodape > nav > a{
+  text-decoration: none;
+  font-family: var(--font-titulo);
+  font-size: 1.5rem;
+  color: var(--cor-contraste);
+}
+.rodape > nav > a:hover{
+  transform: scale(1.05);
+  transition: 0.3s;
+  color: var(--cor-paragrafo);
+  font-weight: 800;
+}
+
+
+
+
+/* .section-qualidade {
   display: flex;
   flex-direction: column;
   margin: 180px;
   border-radius: 10px;
   border: 1px solid black;
   background-color: rgb(25, 150, 199);
-}
+} */
 
-.section-qualidade p{
+/* .section-qualidade p{
     font-family: var(--font-texto);
     font-size: 32px;
     padding-left: 2%;
@@ -99,27 +233,27 @@ body {
     font-weight: 300;
     color: var(--cor-contraste)
 
-}
+} */
 
-.logo-qualidade {
+/* .logo-qualidade {
   width: 25%;
-}
+} */
 
-.titulo-logo {
+/* .titulo-logo {
   flex-direction: column;
   padding: 3% 3% 3% 3%;
   width: 100%;
-}
+} */
 
 
-  .titulo-logo-esquerda {
+  /* .titulo-logo-esquerda {
     display: flex;
     align-items: center;
     width: 50%;
-  }
+  } */
 
 
-.estrelas-gamer {
+/* .estrelas-gamer {
     display: flex;   
     justify-content: space-between; 
     padding-left: 65px;
@@ -129,6 +263,7 @@ body {
   align-self: center;
   width: 412px;
   height: 101px;
+  margin-bottom: 2%;
 }
 
 
@@ -138,15 +273,14 @@ body {
   position: absolute;
   right: 15%;
 
-}
+} */
 
 
 
 
 
 /* Botão compre aqui */
-.button1 {
-  position: absolute;
+/* .button1 {
   width: 311px;
   left: 569px;
   top: 1597px;
@@ -163,23 +297,20 @@ body {
   line-height: 95px;
   text-align: center;
   color: #000000;
-}
-.button1:hover {
-  transform: scale(1.05);
-  transition: 0.3s;
-}
+} */
+
 
 /* config do footer */
-.rodape {
+/* .rodape {
   margin-top: 20px;
-  /* text-align: center; */
+  
   background-color: var(--cor-primaria);
   width: 100%;
   position: absolute;
   height: 120px;
   top: 1826px;
-}
-.rodape p {
+} */
+/* .rodape p {
   position: absolute;
   width: 428px;
   height: 29px;
@@ -189,29 +320,29 @@ body {
   line-height: 29px;
   color: var(--cor-contraste);
   margin-top: 45px;
-}
-.icone-whatsapp {
+} */
+/* .icone-whatsapp {
   position: absolute;
   height: 60px;
   left: 303px;
-  margin-top: 30px;
+  margin-top: 30px; */
   /* background: url(/images/whatsapp\ 1.png); */
-}
-.icone-instagram {
+/* } */
+/* .icone-instagram {
   position: absolute;
   height: 60px;
   left: 190px;
-  margin-top: 30px;
+  margin-top: 30px; */
   /* background: url(/images/instagram\ 1.png); */
-}
-.logo-footer {
+/* } */
+/* .logo-footer {
   position: absolute;
   width: 80px;
   left: 57px;
-  margin-top: 20px;
+  margin-top: 20px; */
   /* background: url(/images/logo\ 2.png); */
-}
-.rodape nav {
+/* } */
+/* .rodape nav {
   position: absolute;
   height: 29px;
   left: 1058px;
@@ -219,9 +350,9 @@ body {
   font-size: 24px;
   line-height: 29px;
   padding: 45px;
-}
-.rodape nav a {
+} */
+/* .rodape nav a {
   margin-right: 45px;
   text-decoration: none;
   color: #ffffff;
-}
+} */

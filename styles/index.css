@@ -212,7 +212,7 @@ body {
 
 @media screen and (max-width: 1200px){
   main{
-    padding: 10%;
+    padding: 2% 0% 0% 2%;
   }
   .nav-principal{
     display: flex;
@@ -239,6 +239,95 @@ body {
     font-size: 17px;
     padding: 10%;
   }
+
+  .section-qualidade{
+    width: 85%;
+
+    display: flex;
+    flex-direction: column;
+    padding: 22%;
+    
+  }
+  .titulo-logo-esquerda{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    
+    
+  }
+  .logo-qualidade{
+    width:30%;
+    
+    
+    
+  }
+  .ilustracao-gamer{
+    width: 80%;
+  }
+  .excelencia-texto{
+    width: 400px;
+    font-size: 20px;
+    padding: 70px;
+  }
+  .texto-estrela{
+    width: 90%;
+    margin: 15px;
+  }
+  .titulo-logo-esquerda > h2{  
+    width: fit-content;       
+    font-size: 22px;    
+    text-align: center;
+    align-self: center;
+    margin-left: 70px;
+  }
+
+  .estrelas-img{
+    width: 50%;
+  }
+
+  .separacao-botao{
+    width: 100%;
+    display: flex;
+    
+  }
+  .botao-comprar{
+    width: 150px;
+    height: 10px;
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;   
+    
+  }
+
+  .rodape{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    text-align: center;    
+    }
+
+  .rodape > p{
+    font-size: 15px;
+    order: 3;
+  }
+
+  
+  .rodape > nav {
+    font-weight: 600;
+    
+  }
+  .rodape > nav > a{
+    font-size: 17px;
+  }
+
+  .logo-footer, .icone-instagram, .icone-whatsapp{
+    width: 50%;    
+  }
+  
+
 
 
 

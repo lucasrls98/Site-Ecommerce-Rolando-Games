@@ -9,6 +9,7 @@
   --cor-destaque: #f47d25;
   --font-titulo: "Lato", sans-serif;
   --font-texto: "Roboto", sans-serif;
+  --font-gamer: "Press Start 2P", cursive;
 }
 
 * {
@@ -66,7 +67,7 @@ body {
 }
 
 .historia-textos > h1 {
-  font-family: "Press Start 2P", cursive;
+  font-family: var(--font-gamer);
   text-align: center;
   font-size: 2.25rem;
   color: var(--cor-destaque);
@@ -101,7 +102,7 @@ body {
 
 .titulo-logo-esquerda > h2{
   transform: translateX(-2rem);
-  font-family: "Press Start 2P";
+  font-family: var(--font-gamer);
   color: var(--cor-contraste);
   font-size: 2.25rem;
 }
@@ -207,6 +208,72 @@ body {
   transition: 0.3s;
   color: var(--cor-paragrafo);
   font-weight: 800;
+}
+
+/* PAGINA NOSSOS PRODUTOS INDEX HTML - INICIA AQUI */
+
+/* Estilos da section carrossel */
+.banner{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+/* Estilos da section produtos  */
+
+.produtos > h1{
+  font-family: var(--font-gamer);
+  font-size: 40px;
+  color: var(--cor-destaque);
+  margin: 60px 0 60px 100px;
+}
+.produtos{
+  display: flex;
+  flex-direction: column;
+}
+
+/* Div da primeira linha de produtos  */
+
+
+.linha-um{
+  display: flex;  
+  justify-content: space-around;
+}
+
+/* Div da segunda linha de produtos  */
+
+.linha-dois{
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Estilo dos quadrantes */
+
+.headset, .xbox, .nintendo, .playstation-quatro,.playstation-cinco, .xbox-s {
+  
+  width: 22%;
+  padding: 22px;
+  background-color: var(--cor-primaria);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.titulos-produtos{
+  font-size: 1.69rem;
+}
+
+.texto-produtos{
+  font-size: 1.8rem;
+  color: var(--cor-contraste);
+  font-weight: 500;
+}
+
+/* Estilos dos botões Comprar  */
+
+.botao-produtos{
+  border: 1px solid white;
+  width: 100%;
 }
 
 

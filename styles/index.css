@@ -229,6 +229,7 @@ body {
 .produtos{
   display: flex;
   flex-direction: column;
+  gap: 100px;
 }
 
 /* Div da primeira linha de produtos  */
@@ -251,12 +252,12 @@ body {
 .headset, .xbox, .nintendo, .playstation-quatro,.playstation-cinco, .xbox-s {
   
   width: 22%;
-  padding: 22px;
+  padding: 50px;
   background-color: var(--cor-primaria);
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 18px;
 }
 
 .titulos-produtos{
@@ -271,9 +272,30 @@ body {
 
 /* Estilos dos botões Comprar  */
 
-.botao-produtos{
-  border: 1px solid white;
+.botao-produtos{  
   width: 100%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 28px;
+  text-decoration: none;
+  background-color: var(--cor-secundaria);  
+}
+
+.carrinho{
+  display: flex;
+  
+  
+  
+}
+
+.texto-comprar{
+  text-decoration: none;
+  font-family: var(--font-texto);
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--cor-destaque);
 }
 
 

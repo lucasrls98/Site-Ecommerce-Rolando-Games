@@ -353,6 +353,29 @@ body {
   color: var(--cor-destaque);
 }
 
+/* PAGINA NOSSOS PRODUTOS TERMINA AQUI */
+
+
+/* PAGINA NOSSA EQUIPE INICIA AQUI------- */
+
+.fileira-um, .fileira-dois{
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 100px 100px 100px; 
+}
+
+.bloco{
+  text-align: center;
+  border: 1px solid white;
+  
+}
+
+.titulo-equipe{
+  font-family: var(--font-gamer);
+  text-align: center;
+  color: var(--cor-destaque);
+}
+
 
 @media screen and (max-width: 1200px){
   main{

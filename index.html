@@ -21,8 +21,21 @@
     </header>
     <main>
         <section id="carrossel">
-            <a class="banner" href="#"><img src="./images/exemplo.png" alt=""></a>
+            <div class="container">
+                <button class="arrow-left control" aria-label="Previous image">◀</button>
+                <button class="arrow-right control" aria-label="Next Image">▶</button>
+                <div class="gallery-wrapper">
+                    <div class="gallery">
+                    
+                        <img src="./images/banner1.png" alt="Beach Image" class="item current-item">
+                        <img src="./images/banner2.png" alt="Animal Image" class="item current-item">
+                        <img src="./images/banner3.png" alt="Street Image" class="item current-item">
+                    
+                    </div>
+                </div>
+            </div>
         </section>
+          
 
         <section class="produtos">
             <h1>Confira nossos produtos!</h1>
@@ -114,7 +127,7 @@
             <a href="#">Contato</a>
         </nav>
     </footer>
-
+    <script src="./script.js"></script>
 </body>
 
 </html>

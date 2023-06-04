@@ -213,11 +213,66 @@ body {
 /* PAGINA NOSSOS PRODUTOS INDEX HTML - INICIA AQUI */
 
 /* Estilos da section carrossel */
-.banner{
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
+.carrossel-container {
+  position: relative;
+  padding: 15px;
+  max-width: auto;
+  margin: 0 auto;
 }
+
+/* flechas do carrossel */
+.arrow-left,
+.arrow-right {
+  position: absolute;
+  align-items: center;
+  font-size: 20px;
+  line-height: 380px; /* Ajuste conforme a altura do item */
+  width: 40px;
+  color: #fff;
+  transition: all 600ms ease-in-out;
+  background: linear-gradient(to left, transparent 0%, black 200%);
+  opacity: 0.1;
+  cursor: pointer;
+  border: none;
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+  opacity: 1;
+}
+
+.arrow-right {
+  right: 0;
+  left: auto;
+  text-align: right;
+  background: linear-gradient(to right, transparent 0%, black 200%);
+}
+
+.gallery {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  align-items: center;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.gallery::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+}
+
+.item {
+  width: auto;
+  height: 380px;
+  flex-shrink: 0;
+  transition: all 600ms ease-in-out;
+  opacity: 0.5;
+}
+
+.current-item {
+  opacity: 1;
+}
+
 /* Estilos da section produtos  */
 
 .produtos > h1{

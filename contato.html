@@ -20,33 +20,35 @@
 
         </nav>
     </header>
-    <section id="formulario">
+    <section class="divisao-contato">
 
-        <form>
-            <h1>Entre em contato:</h1>
+        <div class="info-contato">
 
-            <h2><img src="./images/whatsapp 2.png">(41) 99595-7189 </h2>
-            <h2><img src="./images/instagram2.png">@rolando.games</h2>
-            <h2><img src="./images/email 2.png">rolando.games@atendimento.com</h2>
-            <h2><img src="./images/endereço.png">Curitiba, Paraná</h2>
+                <h1>Entre em contato:</h1>
+
+                <h2><img src="./images/whatsapp 2.png">(41) 99595-7189 </h2>
+                <h2><img src="./images/instagram2.png">@rolando.games</h2>
+                <h2><img src="./images/email 2.png">rolando.games@atendimento.com</h2>
+                <h2><img src="./images/endereço.png">Curitiba, Paraná</h2>
+            
+            </div>
+
+        <form class="form">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+
+            <div class="buttons">
+                <button id="submit" type="submit">Enviar</button>
+                <button id="cancel" type="button" class="cancelar">Cancelar</button>
+            </div>
+
+    
         </form>
-
     </section>
-
-    <form class="form">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required>
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="mensagem">Mensagem:</label>
-        <textarea id="mensagem" name="mensagem" required></textarea>
-        <div class="buttons">
-            <button id="submit" type="submit">Enviar</button>
-            <button id="cancel" type="button" class="cancelar">Cancelar</button>
-        </div>
-
-    </form>
-
     <footer class="rodape">
         <div class="redes-sociais">
             <a href="index.html"><img class="logo-footer" src="images/logo 2.png" alt="moeda dourada com r dentro"></a>

@@ -362,6 +362,8 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 50px 100px 100px 100px; 
+  border: 1px solid white;
+  
 }
 
 .bloco{

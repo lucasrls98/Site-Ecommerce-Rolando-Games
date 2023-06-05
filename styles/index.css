@@ -363,10 +363,23 @@ body {
   
 }
 
-.bloco{
-  text-align: center;
+.bloco{  
+  text-align: center; 
+  margin: 1rem;
+}
+.bloco > h2{
+  font-family: var(--font-gamer);
+  margin: 0.8rem;
   
+}
+
+.bloco > h3{
+  margin: 0.8rem;
+  color: #ca6c23;
   
+}
+.equipe-linkedin-icon{
+  margin: 0.8rem;
 }
 
 .titulo-equipe{

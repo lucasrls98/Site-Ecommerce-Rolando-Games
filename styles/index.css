@@ -327,30 +327,24 @@ body {
 
 /* Estilos dos botões Comprar  */
 
-.botao-produtos{  
-  width: 100%;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  font-size: 28px;
-  text-decoration: none;
-  background-color: var(--cor-secundaria);  
-}
 
-.carrinho{
-  display: flex;
-  
-  
-  
-}
+
+
 
 .texto-comprar{
-  text-decoration: none;
+  width: 100%;
+  border-radius: 10px;  
+  font-size: 28px;
+  text-decoration: none;  
+  background-color: var(--cor-secundaria);    
+  display: flex;
+  align-items: center;  
   font-family: var(--font-texto);
   text-transform: uppercase;
   font-weight: 600;
   color: var(--cor-destaque);
+  text-align: center;
+  padding: 0 25px;
 }
 
 /* PAGINA NOSSOS PRODUTOS TERMINA AQUI */

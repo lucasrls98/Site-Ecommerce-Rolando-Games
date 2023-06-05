@@ -546,6 +546,23 @@ body {
     padding: 1.5rem 10rem;
   }
 
+  .produtos > h1{
+    display: flex;
+    text-align: center;
+    margin: 100px 0px 0px 0px;
+  }
+
+  #carrossel{
+    margin-top: 50px;
+    
+  }
+
+  
+
+
+
+  
+
 
 
   

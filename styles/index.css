@@ -355,6 +355,8 @@ body {
 
 /* PAGINA NOSSA EQUIPE INICIA AQUI------- */
 
+/* dividindo as fileiras de acordo com o design  */
+
 .fileira-um, .fileira-dois{
   display: flex;
   justify-content: space-between;
@@ -362,6 +364,9 @@ body {
   
   
 }
+
+/* estilos dos blocos com integrantes da equipe  */
+
 
 .bloco{  
   text-align: center; 

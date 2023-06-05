@@ -344,7 +344,11 @@ body {
   font-weight: 600;
   color: var(--cor-destaque);
   text-align: center;
-  padding: 0 25px;
+  padding: 0 0.5rem;
+}
+
+.img-produto{
+  width: 100%;
 }
 
 /* PAGINA NOSSOS PRODUTOS TERMINA AQUI */

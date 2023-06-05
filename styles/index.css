@@ -304,7 +304,7 @@ body {
 
 /* Estilo dos quadrantes */
 
-.headset, .xbox, .nintendo, .playstation-quatro,.playstation-cinco, .xbox-s {
+.retangulo {
   
   width: 22%;
   padding: 50px;
@@ -541,6 +541,9 @@ body {
 
   .img-produto{
     width: 17rem;
+  }
+  .retangulo{
+    padding: 1.5rem 10rem;
   }
 
 

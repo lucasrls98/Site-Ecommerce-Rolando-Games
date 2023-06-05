@@ -401,9 +401,7 @@ body {
 
 
 @media screen and (max-width: 1200px){
-  main{
-    padding: 2% 0% 0% 2%;
-  }
+  
   .nav-principal{
     display: flex;
     flex-direction: column;
@@ -490,14 +488,17 @@ body {
     
   }
 
-  .rodape{
-    width: fit-content;
+  /* FOOTER GERAL  */
+
+  .rodape{    
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: column;    
     gap: 20px;
-    text-align: center;    
-    }
+    text-align: center;
+    margin-top: 50px;
+    
+
+  }
 
   .rodape > p{
     font-size: 15px;
@@ -516,6 +517,33 @@ body {
   .logo-footer, .icone-instagram, .icone-whatsapp{
     width: 50%;    
   }
+
+  /* MEDIA PÁGINA NOSSA EQUIPE */
+
+  .fileira-um, .fileira-dois{
+    display: block;
+    margin: auto;
+    
+    
+  }
+  .bloco>p{
+    margin: auto;
+  }
+
+  /* MEDIA PÁGINA NOSSOS PRODUTOS */
+  .linha-um, .linha-dois{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .img-produto{
+    width: 17rem;
+  }
+
+
 
   
 

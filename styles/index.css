@@ -383,6 +383,11 @@ body {
   color: #ca6c23;
   
 }
+
+.bloco > p{
+  margin:0 4rem ;
+}
+
 .equipe-linkedin-icon{
   margin: 0.8rem;
 }
@@ -391,6 +396,7 @@ body {
   font-family: var(--font-gamer);
   text-align: center;
   color: var(--cor-destaque);
+  margin-top: 4rem;
 }
 
 

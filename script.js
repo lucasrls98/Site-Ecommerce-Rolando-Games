@@ -54,3 +54,10 @@ function validateForm(event) {
 
 const form = document.querySelector('.form');
 form.addEventListener('submit', validateForm);
+
+
+
+
+// JS DA PAGINA TESTE 
+
+

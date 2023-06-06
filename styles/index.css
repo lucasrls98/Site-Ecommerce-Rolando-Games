@@ -223,7 +223,7 @@ body {
   align-items: center;
   font-size: 20px;
   line-height: 380px; /* Ajuste conforme a altura do item */
-  width: 60px;
+  width: 800px;
   color: #fff;
   transition: all 600ms ease-in-out;
   background: linear-gradient(to left, transparent 0%, black 200%);

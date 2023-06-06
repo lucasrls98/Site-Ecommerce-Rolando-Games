@@ -12,7 +12,8 @@
 <body>
     <header>
         <nav class="nav-principal">
-            <a href="index.html"><img class="logo-header" src="./images/logo 1.png" alt="moeda dourada com um r dentro"><a>
+            <a href="index.html"><img class="logo-header" src="./images/logo 1.png"
+                    alt="moeda dourada com um r dentro"><a>
                     <a class="menu-header" href="index.html">Nossos Produtos</a>
                     <a class="menu-header" href="quemsomos.html">Quem Somos</a>
                     <a class="menu-header" href="nossaequipe.html">Nossa Equipe</a>
@@ -20,34 +21,38 @@
 
         </nav>
     </header>
+
     <section class="divisao-contato">
 
         <div class="info-contato">
 
-                <h1>Entre em contato:</h1>
+            <h1>Entre em contato:</h1>
+            <br>
+            <h2><img class="icones" src="./images/whatsapp 2.png"> (41) 99595-7189 </h2>
+            <br>
+            <h2><img class="icones" src="./images/instagram2.png"> @rolando.games</h2>
+            <br>
+            <h2><img class="icones" src="./images/email 2.png"> rolando.games@atendimento.com</h2>
+            <br>
+            <h2><img class="icones" src="./images/endereço.png"> Curitiba, Paraná</h2>
 
-                <h2><img src="./images/whatsapp 2.png">(41) 99595-7189 </h2>
-                <h2><img src="./images/instagram2.png">@rolando.games</h2>
-                <h2><img src="./images/email 2.png">rolando.games@atendimento.com</h2>
-                <h2><img src="./images/endereço.png">Curitiba, Paraná</h2>
-            
-            </div>
+        </div>
+        <div class="info-contato">
+            <form class="form">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required placeholder="Insira um e-mail válido">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required placeholder="Escreva sua mensagem"></textarea>
 
-        <form class="form">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" required></textarea>
+                <div class="buttons">
+                    <button id="submit" type="submit">Enviar</button>
+                </div>
+        </div>
 
-            <div class="buttons">
-                <button id="submit" type="submit">Enviar</button>
-                <button id="cancel" type="button" class="cancelar">Cancelar</button>
-            </div>
-
-    
         </form>
+
     </section>
     <footer class="rodape">
         <div class="redes-sociais">

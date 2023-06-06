@@ -49,7 +49,6 @@ function validateForm(event) {
   }
 
   alert('Formulário enviado com sucesso!');
-  // Aqui você pode adicionar lógica adicional para enviar os dados do formulário para o servidor, etc.
 }
 
 const form = document.querySelector('.form');

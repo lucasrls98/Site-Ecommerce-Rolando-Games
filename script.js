@@ -1,3 +1,5 @@
+//JS do carrossel
+
 const controls = document.querySelectorAll(".control");
 let currentItem = 0;
 const items = document.querySelectorAll(".item");
@@ -32,3 +34,23 @@ controls.forEach((control) => {
     items[currentItem].classList.add("current-item");
   });
 });
+
+//JS de validação do form
+function validateForm(event) {
+  event.preventDefault();
+
+  const nomeInput = document.getElementById('nome');
+  const emailInput = document.getElementById('email');
+  const mensagemInput = document.getElementById('mensagem');
+
+  if (!nomeInput.value || !emailInput.value || !mensagemInput.value) {
+    alert('Por favor, preencha todos os campos.');
+    return;
+  }
+
+  alert('Formulário enviado com sucesso!');
+  // Aqui você pode adicionar lógica adicional para enviar os dados do formulário para o servidor, etc.
+}
+
+const form = document.querySelector('.form');
+form.addEventListener('submit', validateForm);

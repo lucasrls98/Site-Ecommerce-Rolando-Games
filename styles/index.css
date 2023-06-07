@@ -229,6 +229,108 @@ body {
 
 /* Estilos da section produtos  */
 
+/* SLIDER BANNER----------------------- */
+
+.slider{
+  margin: 0 auto;
+  width: 1600px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.slides{
+  width: 400%;
+  height: 400px;
+  display: flex;
+}
+
+.slides input{
+  display: none;
+}
+
+.slide{
+  width: 25%;
+  position: relative;
+  transition: 1.5s;
+}
+
+.slide img{
+  width: 1600px;
+  
+}
+
+.manual-navigation{
+  position: absolute;
+  width: 1600px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn{
+  border: 2px solid var(--cor-contraste);
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background-color: var(--cor-contraste);
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+#radio2:checked ~ .first{
+  margin-left: -25%;
+}
+#radio3:checked ~ .first{
+  margin-left: -50%;
+
+}
+#radio4:checked ~ .first{
+  margin-left: -75%;
+}
+.navigation-auto div{
+  border: 2px solid var(--cor-primaria);
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.navigation-auto{
+  position: absolute;
+  width: 1600px;
+  margin-top: 360px;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background-color: #fff;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background-color: #fff;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background-color: #fff;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+  background-color: #fff;
+}
+
+/* Estilos dos produtos  */
+
 .produtos > h1 {
   font-family: var(--font-gamer);
   font-size: 40px;
@@ -354,6 +456,9 @@ body {
 
 /*--------------------INÍCIO DA PÁGINA DE CONTATO -------------- */
 
+
+/* Blocos esquerda e direita  */
+
 .divisao-contato {
   display: flex;
   justify-content: center;
@@ -381,6 +486,8 @@ body {
   font-size: 20px;
   line-height: 50px;
 }
+
+/* formulário de contato  */
 
 .form {
   background-color: var(--cor-contraste);
@@ -448,105 +555,6 @@ body {
 }
 
 
-/* TESTE SLIDER BANNER----------------------- */
-
-.slider{
-  margin: 0 auto;
-  width: 1600px;
-  height: 400px;
-  overflow: hidden;
-}
-
-.slides{
-  width: 400%;
-  height: 400px;
-  display: flex;
-}
-
-.slides input{
-  display: none;
-}
-
-.slide{
-  width: 25%;
-  position: relative;
-  transition: 1.5s;
-}
-
-.slide img{
-  width: 1600px;
-  
-}
-
-.manual-navigation{
-  position: absolute;
-  width: 1600px;
-  margin-top: -40px;
-  display: flex;
-  justify-content: center;
-}
-
-.manual-btn{
-  border: 2px solid var(--cor-contraste);
-  padding: 5px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 1s;
-}
-
-.manual-btn:not(:last-child){
-  margin-right: 40px;
-}
-
-.manual-btn:hover{
-  background-color: var(--cor-contraste);
-}
-
-#radio1:checked ~ .first{
-  margin-left: 0;
-}
-#radio2:checked ~ .first{
-  margin-left: -25%;
-}
-#radio3:checked ~ .first{
-  margin-left: -50%;
-
-}
-#radio4:checked ~ .first{
-  margin-left: -75%;
-}
-.navigation-auto div{
-  border: 2px solid var(--cor-primaria);
-  padding: 5px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 1s;
-}
-
-.navigation-auto{
-  position: absolute;
-  width: 1600px;
-  margin-top: 360px;
-  display: flex;
-  justify-content: center;
-}
-
-.navigation-auto div:not(:last-child){
-  margin-right: 40px;
-}
-
-#radio1:checked ~ .navigation-auto .auto-btn1{
-  background-color: #fff;
-}
-#radio2:checked ~ .navigation-auto .auto-btn2{
-  background-color: #fff;
-}
-#radio3:checked ~ .navigation-auto .auto-btn3{
-  background-color: #fff;
-}
-#radio4:checked ~ .navigation-auto .auto-btn4{
-  background-color: #fff;
-}
 
 
 
@@ -562,13 +570,18 @@ body {
 
 
 @media screen and (max-width: 1200px) {
+  
+  /* HEADER GERAL - foi colocado em coluna para responsividade  */
   .nav-principal {
     display: flex;
     flex-direction: column;
   }
 
+  /* -------------------PAGINA QUEM SOMOS ------------------- */
+
+  /* foi alterado os tamanhos width e font-size, ajustado paddings e margins com mobile-first thinking */
   .ilustracao-ecommerce {
-    width: 100%;
+    width: 65%;
   }
 
   .historia-textos {
@@ -587,6 +600,8 @@ body {
     padding: 10%;
   }
 
+  /* Section qualidade foi colocada em coluna também para melhor visualização   */
+  
   .section-qualidade {
     width: 85%;
 
@@ -603,12 +618,12 @@ body {
     width: 30%;
   }
   .ilustracao-gamer {
-    width: 80%;
+    width: 0%;
   }
   .excelencia-texto {
-    width: 400px;
+    width: 250px;
     font-size: 20px;
-    padding: 70px;
+    margin-right: 20px;  
   }
   .texto-estrela {
     width: 90%;
@@ -620,6 +635,7 @@ body {
     text-align: center;
     align-self: center;
     margin-left: 70px;
+    margin-bottom: 10px;
   }
 
   .estrelas-img {
@@ -667,8 +683,9 @@ body {
     width: 50%;
   }
 
-  /* MEDIA PÁGINA NOSSA EQUIPE */
+  /* -----------------------MEDIA PÁGINA NOSSA EQUIPE ------------------------*/
 
+  /* divs das fileiras foram colocadas em blocks para alinharem-se em colunas  */
   .fileira-um,
   .fileira-dois {
     display: block;
@@ -678,7 +695,10 @@ body {
     margin: auto;
   }
 
-  /* MEDIA PÁGINA NOSSOS PRODUTOS */
+  /*------------------------------- MEDIA PÁGINA NOSSOS PRODUTOS */
+
+  
+
   .linha-um,
   .linha-dois {
     display: flex;
@@ -706,7 +726,7 @@ body {
   }
 
 
-  /* MEDIA PÁGINA CONTATO ------------------------ */
+  /* ------------------MEDIA PÁGINA CONTATO ------------------------ */
 
   .info-contato{
     display: flex;

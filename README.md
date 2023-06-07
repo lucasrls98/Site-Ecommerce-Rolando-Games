@@ -2,6 +2,8 @@
 
 Este é o repositório do projeto do site do e-commerce de games chamado Rolando Games. O objetivo desse projeto foi criar uma loja online para venda de jogos, atendendo aos requisitos solicitados. O site está em fase inicial de desenvolvimento e foi criado como parte da formação em front-end utilizando HTML, CSS e JavaScript.
 
+![Descrição da Rolando Games](images/rolando-games-md.png)
+
 O projeto precisava seguir os seguintes requisitos:
 
 ## Requisitos
@@ -57,6 +59,9 @@ Neste projeto do Rolando Games, conseguimos atender a todos os requisitos solici
 Fique à vontade para explorar o código, sugerir melhorias ou entrar em contato para qualquer esclarecimento adicional.
 
 Agradecemos a oportunidade de desenvolver o projeto do Rolando Games e esperamos que apreciem o resultado final.
+
+
+![Página Nossa Equipe](images/nossa-equipe-md.png)
 
 Atenciosamente,
 Squad 3 - Códigos do Amanhã EBANX 2023.

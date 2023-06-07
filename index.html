@@ -1,3 +1,4 @@
+<!-- Estrutura pincipal do html --->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,11 +9,14 @@
     <link rel="stylesheet" href="./styles/index.css">
     <title>Nossos Produtos</title>
 </head>
-
+<!-- corpo principal do html -->
 <body>
+    <!--------------------- cabeçalho -------------  -->
+    <!-- foi criado um navegador com classe para facilitar no processo de css, tag a para ancorar os link que levam par aas outras páginas -->
     <header>
         <nav class="nav-principal">
-            <a href="index.html"><img class="logo-header" src="./images/logo 1.png" alt="moeda dourada com um r dentro"><a>
+            <a href="index.html"><img class="logo-header" src="./images/logo 1.png"
+                    alt="moeda dourada com um r dentro"><a>
                     <a class="menu-header" href="index.html">Nossos Produtos</a>
                     <a class="menu-header" href="quemsomos.html">Quem Somos</a>
                     <a class="menu-header" href="nossaequipe.html">Nossa Equipe</a>
@@ -21,76 +25,106 @@
     </header>
 
     <main>
-        <section id="carrossel">
-            <div class="container">
-                <button class="arrow-left control" aria-label="Previous image">◀</button>
-                <button class="arrow-right control" aria-label="Next Image">▶</button>
-                <div class="gallery-wrapper">
-                    <div class="gallery">
+        <!-- classe slider para manipulação em js e css -->
 
-                        <img src="./images/banner1.png" alt="Image" class="item current-item">
-                        <img src="./images/banner2.png" alt="Image" class="item current-item">
-                        <img src="./images/banner3.png" alt="Image" class="item current-item">
+        <div class="slider">
+            <div class="slides">
+                <!-- RADIO BUTTONS -->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
 
-                    </div>
+                <!-- RADIO BUTTONS -->
+
+                <!-- IMAGENS  -->
+
+                <div class="slide first">
+                    <img src="./images/banner1.png" alt="text">
+                </div>
+                <div class="slide">
+                    <img src="./images/banner2.png" alt="text">
+                </div>
+                <div class="slide">
+                    <img src="./images/banner3.png" alt="text">
+                </div>
+                <div class="slide">
+                    <img src="./images/banner2.png" alt="text">
+                </div>
+
+                <!-- fim slide imagens  -->
+
+                <!-- navigation auto -->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+
                 </div>
             </div>
-        </section>
+                <!-- navegação manual do carrosel -->
+            <div class="manual-navigation">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
 
+            </div>
+        </div>
 
+        <!-- primeira section de produtos, utilizado h1 para titulo principal, criado duas divs para a linha um e dois de produtos e dentro dessas mais 3 divs cada para os produtos -->
         <section class="produtos">
             <h1>Confira nossos produtos!</h1>
+            <!-- div da primeira linha de produtos -->
             <div class="linha-um">
                 <div class="headset retangulo">
-                    <a href="#"><img class="img-produto"  src="./images/headset.png" alt="headset gamer preto"></a>
+                    <a href="#"><img class="img-produto" src="./images/headset.png" alt="headset gamer preto"></a>
                     <h2 class="titulos-produtos">Headset Gamer Redragon Zeus X</h2>
                     <p class="texto-produtos">R$269,90</p>
                     <div class="botao-produtos">
                         <a class="texto-comprar" href="index.html" class="carrinho">
-                            <img src="./images/carrinho.png"
-                                alt="icone de carrinho de super mercado">
-                                Comprar
-                            </a>                        
+                            <img src="./images/carrinho.png" alt="icone de carrinho de super mercado">
+                            Comprar
+                        </a>
                     </div>
                 </div>
                 <div class="xbox retangulo">
-                    <a href="#"><img class="img-produto"  src="./images/xboxx.png" alt="console xbox series x"></a>
+                    <a href="#"><img class="img-produto" src="./images/xboxx.png" alt="console xbox series x"></a>
                     <h2 class="titulos-produtos">Console Xbox Series X 1TB</h2>
                     <p class="texto-produtos">R$4.450,00</p>
                     <div class="botao-produtos">
                         <a class="texto-comprar" href="index.html" class="carrinho">
-                            <img src="./images/carrinho.png"
-                                alt="icone de carrinho de super mercado">
-                                Comprar
-                            </a>                        
+                            <img src="./images/carrinho.png" alt="icone de carrinho de super mercado">
+                            Comprar
+                        </a>
                     </div>
                 </div>
                 <div class="nintendo retangulo">
-                    <a href="#"><img class="img-produto"  src="./images/nintendo.png" alt="nintendo switch lite azul"></a>
+                    <a href="#"><img class="img-produto" src="./images/nintendo.png"
+                            alt="nintendo switch lite azul"></a>
                     <h2 class="titulos-produtos">Console Nintendo Switch Lite - Azul</h2>
                     <p class="texto-produtos">R$1.439,90</p>
                     <div class="botao-produtos">
                         <a class="texto-comprar" href="index.html" class="carrinho">
-                            <img src="./images/carrinho.png"
-                                alt="icone de carrinho de super mercado">
-                                Comprar
-                            </a>                        
+                            <img src="./images/carrinho.png" alt="icone de carrinho de super mercado">
+                            Comprar
+                        </a>
                     </div>
                 </div>
 
             </div>
-
+            <!-- div da segunda linha de produtos -->
             <div class="linha-dois">
                 <div class="playstation-quatro retangulo">
-                    <a href="#"><img class="img-produto"  src="./images/play4.png" alt="playstation quatro slim"></a>
+                    <a href="#"><img class="img-produto" src="./images/play4.png" alt="playstation quatro slim"></a>
                     <h2 class="titulos-produtos">Console Playstation 4 Slim</h2>
                     <p class="texto-produtos">R$2.046,90</p>
                     <div class="botao-produtos">
                         <a class="texto-comprar" href="index.html" class="carrinho">
-                            <img src="./images/carrinho.png"
-                                alt="icone de carrinho de super mercado">
-                                Comprar
-                            </a>                        
+                            <img src="./images/carrinho.png" alt="icone de carrinho de super mercado">
+                            Comprar
+                        </a>
                     </div>
                 </div>
                 <div class="playstation-cinco retangulo">
@@ -99,22 +133,20 @@
                     <p class="texto-produtos">R$3.799,00</p>
                     <div class="botao-produtos">
                         <a class="texto-comprar" href="index.html" class="carrinho">
-                            <img src="./images/carrinho.png"
-                                alt="icone de carrinho de super mercado">
-                                Comprar
-                            </a>                        
+                            <img src="./images/carrinho.png" alt="icone de carrinho de super mercado">
+                            Comprar
+                        </a>
                     </div>
                 </div>
                 <div class="xbox-s retangulo">
-                    <a href="#"><img class="img-produto"  src="./images/xboxs.png" alt="xbox series s"></a>
+                    <a href="#"><img class="img-produto" src="./images/xboxs.png" alt="xbox series s"></a>
                     <h2 class="titulos-produtos">Console Xbox Series S 512GB</h2>
                     <p class="texto-produtos">R$2.399,90</p>
                     <div class="botao-produtos">
                         <a class="texto-comprar" href="index.html" class="carrinho">
-                            <img src="./images/carrinho.png"
-                                alt="icone de carrinho de super mercado">
-                                Comprar
-                            </a>                        
+                            <img src="./images/carrinho.png" alt="icone de carrinho de super mercado">
+                            Comprar
+                        </a>
                     </div>
                 </div>
 
@@ -127,6 +159,7 @@
 
 
     </main>
+    <!-- rodapé foi utilizado divs e tag a para ancorar os link para outras páginas e redes sociais -->
     <footer class="rodape">
         <div class="redes-sociais">
             <a href="index.html"><img class="logo-footer" src="images/logo 2.png" alt="moeda dourada com r dentro"></a>

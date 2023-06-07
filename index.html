@@ -1,3 +1,4 @@
+<!-- Estrutura pincipal do html --->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,8 +9,10 @@
     <link rel="stylesheet" href="./styles/index.css">
     <title>Nossos Produtos</title>
 </head>
-
+<!-- corpo principal do html -->
 <body>
+    <!--------------------- cabeçalho -------------  -->
+    <!-- foi criado um navegador com classe para facilitar no processo de css, tag a para ancorar os link que levam par aas outras páginas -->
     <header>
         <nav class="nav-principal">
             <a href="index.html"><img class="logo-header" src="./images/logo 1.png" alt="moeda dourada com um r dentro"><a>
@@ -21,6 +24,7 @@
     </header>
 
     <main>
+        <!-- classe carrossel da section para manipulação em js e css -->
         <section id="carrossel">
             <div class="container">
                 <button class="arrow-left control" aria-label="Previous image">◀</button>
@@ -37,9 +41,10 @@
             </div>
         </section>
 
-
+        <!-- primeira section de produtos, utilizado h1 para titulo principal, criado duas divs para a linha um e dois de produtos e dentro dessas mais 3 divs cada para os produtos -->
         <section class="produtos">
             <h1>Confira nossos produtos!</h1>
+            <!-- div da primeira linha de produtos -->
             <div class="linha-um">
                 <div class="headset retangulo">
                     <a href="#"><img class="img-produto"  src="./images/headset.png" alt="headset gamer preto"></a>
@@ -79,7 +84,7 @@
                 </div>
 
             </div>
-
+            <!-- div da segunda linha de produtos -->
             <div class="linha-dois">
                 <div class="playstation-quatro retangulo">
                     <a href="#"><img class="img-produto"  src="./images/play4.png" alt="playstation quatro slim"></a>
@@ -127,6 +132,7 @@
 
 
     </main>
+    <!-- rodapé foi utilizado divs e tag a para ancorar os link para outras páginas e redes sociais -->
     <footer class="rodape">
         <div class="redes-sociais">
             <a href="index.html"><img class="logo-footer" src="images/logo 2.png" alt="moeda dourada com r dentro"></a>

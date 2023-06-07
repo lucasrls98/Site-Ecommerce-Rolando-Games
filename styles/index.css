@@ -663,6 +663,7 @@ body {
     gap: 20px;
     text-align: center;
     margin-top: 50px;
+    width: 100%;    
   }
 
   .rodape > p {
@@ -874,7 +875,11 @@ body {
 
   }
 
-
-
 }
+
+/* @media screen and (max-width: 1600px){
+  .rodape{
+    width: 99%;
+  }
+} */
 

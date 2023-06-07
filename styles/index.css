@@ -12,16 +12,24 @@
   --font-gamer: "Press Start 2P", cursive;
 }
 
+/* RESET CSS  */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: var(--font-texto);
 }
+/* COR BACKGROUND GERAL  */
 
 body {
   background-color: var(--cor-background);
 }
+
+/* -----------------PÁGINA QUEM SOMOS -------------- */
+
+/* Estilos do header de todos os html  */
+
 
 .nav-principal {
   width: 100%;
@@ -44,10 +52,14 @@ body {
   transition: 0.3s;
 }
 
+/* imagem svg  */
+
 .ilustracao-ecommerce {
   align-items: center;
   margin: 50px;
+  width: 65%;
 }
+/* primeira section da page quem somos  */
 
 .section-historia {
   display: flex;

@@ -12,16 +12,24 @@
   --font-gamer: "Press Start 2P", cursive;
 }
 
+/* RESET CSS  */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: var(--font-texto);
 }
+/* COR BACKGROUND GERAL  */
 
 body {
   background-color: var(--cor-background);
 }
+
+/* -----------------PÁGINA QUEM SOMOS -------------- */
+
+/* Estilos do header de todos os html  */
+
 
 .nav-principal {
   width: 100%;
@@ -44,10 +52,15 @@ body {
   transition: 0.3s;
 }
 
+/* imagem svg  */
+
 .ilustracao-ecommerce {
   align-items: center;
   margin: 50px;
+  width: 65%;
 }
+
+/* estilos .section-historia da page quem somos  */
 
 .section-historia {
   display: flex;
@@ -79,6 +92,8 @@ body {
 .historia-textos > p {
   font-size: 2rem;
 }
+
+/* section-qualidade estilos  */
 
 .section-qualidade {
   background-color: var(--cor-primaria);
@@ -125,6 +140,8 @@ body {
   width: 70%;
 }
 
+/* botão comprar da pagina quem somos  */
+
 .separacao-botao {
   width: 100%;
   display: flex;
@@ -155,6 +172,8 @@ body {
   background-color: var(--cor-destaque);
   color: #f5f5f5;
 }
+
+/* ESTILOS DO FOOTER GERAL   */
 
 .logo-footer {
   cursor: pointer;
@@ -208,68 +227,109 @@ body {
 
 /* PAGINA NOSSOS PRODUTOS INDEX HTML - INICIA AQUI */
 
-/* Estilos da section carrossel */
-.carrossel-container {
-  position: relative;
-  padding: 15px;
-  max-width: auto;
-  margin: 0 auto;
-}
-
-/* flechas do carrossel */
-.arrow-left,
-.arrow-right {
-  position: absolute;
-  align-items: center;
-  font-size: 20px;
-  line-height: 380px; /* Ajuste conforme a altura do item */
-  width: 800px;
-  color: #fff;
-  transition: all 600ms ease-in-out;
-  background: linear-gradient(to left, transparent 0%, black 200%);
-  opacity: 0.1;
-  cursor: pointer;
-  border: white;
-}
-
-.arrow-left:hover,
-.arrow-right:hover {
-  opacity: 1;
-}
-
-.arrow-right {
-  right: 0;
-  left: auto;
-  text-align: right;
-  background: linear-gradient(to right, transparent 0%, black 200%);
-}
-
-.gallery {
-  display: flex;
-  gap: 15px;
-  overflow-x: auto;
-  align-items: center;
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
-
-.gallery::-webkit-scrollbar {
-  display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
-}
-
-.item {
-  width: auto;
-  height: 380px;
-  flex-shrink: 0;
-  transition: all 600ms ease-in-out;
-  opacity: 0.5;
-}
-
-.current-item {
-  opacity: 1;
-}
-
 /* Estilos da section produtos  */
+
+/* SLIDER BANNER----------------------- */
+
+.slider{
+  margin: 0 auto;
+  width: 1600px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.slides{
+  width: 400%;
+  height: 400px;
+  display: flex;
+}
+
+.slides input{
+  display: none;
+}
+
+.slide{
+  width: 25%;
+  position: relative;
+  transition: 1.5s;
+}
+
+.slide img{
+  width: 1600px;
+  
+}
+
+.manual-navigation{
+  position: absolute;
+  width: 1600px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn{
+  border: 2px solid var(--cor-contraste);
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background-color: var(--cor-contraste);
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+#radio2:checked ~ .first{
+  margin-left: -25%;
+}
+#radio3:checked ~ .first{
+  margin-left: -50%;
+
+}
+#radio4:checked ~ .first{
+  margin-left: -75%;
+}
+.navigation-auto div{
+  border: 2px solid var(--cor-primaria);
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.navigation-auto{
+  position: absolute;
+  width: 1600px;
+  margin-top: 360px;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background-color: #fff;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background-color: #fff;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background-color: #fff;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+  background-color: #fff;
+}
+
+/* Estilos dos produtos  */
 
 .produtos > h1 {
   font-family: var(--font-gamer);
@@ -396,6 +456,9 @@ body {
 
 /*--------------------INÍCIO DA PÁGINA DE CONTATO -------------- */
 
+
+/* Blocos esquerda e direita  */
+
 .divisao-contato {
   display: flex;
   justify-content: center;
@@ -424,6 +487,8 @@ body {
   line-height: 50px;
 }
 
+/* formulário de contato  */
+
 .form {
   background-color: var(--cor-contraste);
   width: fit-content;
@@ -436,7 +501,7 @@ body {
   width: 100%;
   height: 45px;
   background-color: #D2E6EA;
-  color: var(--cor-contraste);
+  color: var(--cor-paragrafo);
   border: none;
   padding: 10px 20px;
   cursor: pointer;
@@ -447,16 +512,21 @@ body {
   font: var(--font-titulo);
   line-height: 1.5rem;
   font-family:var(--font-titulo);
+  
 }
 
 #mensagem {
   width: 100%;
   height: 80px;
   background-color: #D2E6EA;
-  color: var(--cor-contraste);
+  color: var(--cor-paragrafo);
   border: none;
   padding: 10px 20px;
   cursor: pointer;
+}
+
+#id{
+  background-color: #D2E6EA;
 }
 
 .icones {
@@ -485,105 +555,6 @@ body {
 }
 
 
-/* TESTE SLIDER BANNER----------------------- */
-
-.slider{
-  margin: 0 auto;
-  width: 1600px;
-  height: 400px;
-  overflow: hidden;
-}
-
-.slides{
-  width: 400%;
-  height: 400px;
-  display: flex;
-}
-
-.slides input{
-  display: none;
-}
-
-.slide{
-  width: 25%;
-  position: relative;
-  transition: 1.5s;
-}
-
-.slide img{
-  width: 1600px;
-  
-}
-
-.manual-navigation{
-  position: absolute;
-  width: 1600px;
-  margin-top: -40px;
-  display: flex;
-  justify-content: center;
-}
-
-.manual-btn{
-  border: 2px solid var(--cor-contraste);
-  padding: 5px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 1s;
-}
-
-.manual-btn:not(:last-child){
-  margin-right: 40px;
-}
-
-.manual-btn:hover{
-  background-color: var(--cor-contraste);
-}
-
-#radio1:checked ~ .first{
-  margin-left: 0;
-}
-#radio2:checked ~ .first{
-  margin-left: -25%;
-}
-#radio3:checked ~ .first{
-  margin-left: -50%;
-
-}
-#radio4:checked ~ .first{
-  margin-left: -75%;
-}
-.navigation-auto div{
-  border: 2px solid var(--cor-primaria);
-  padding: 5px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 1s;
-}
-
-.navigation-auto{
-  position: absolute;
-  width: 1600px;
-  margin-top: 360px;
-  display: flex;
-  justify-content: center;
-}
-
-.navigation-auto div:not(:last-child){
-  margin-right: 40px;
-}
-
-#radio1:checked ~ .navigation-auto .auto-btn1{
-  background-color: #fff;
-}
-#radio2:checked ~ .navigation-auto .auto-btn2{
-  background-color: #fff;
-}
-#radio3:checked ~ .navigation-auto .auto-btn3{
-  background-color: #fff;
-}
-#radio4:checked ~ .navigation-auto .auto-btn4{
-  background-color: #fff;
-}
 
 
 
@@ -599,13 +570,18 @@ body {
 
 
 @media screen and (max-width: 1200px) {
+  
+  /* HEADER GERAL - foi colocado em coluna para responsividade  */
   .nav-principal {
     display: flex;
     flex-direction: column;
   }
 
+  /* -------------------PAGINA QUEM SOMOS ------------------- */
+
+  /* foi alterado os tamanhos width e font-size, ajustado paddings e margins com mobile-first thinking */
   .ilustracao-ecommerce {
-    width: 100%;
+    width: 65%;
   }
 
   .historia-textos {
@@ -624,6 +600,8 @@ body {
     padding: 10%;
   }
 
+  /* Section qualidade foi colocada em coluna também para melhor visualização   */
+  
   .section-qualidade {
     width: 85%;
 
@@ -640,12 +618,12 @@ body {
     width: 30%;
   }
   .ilustracao-gamer {
-    width: 80%;
+    width: 0%;
   }
   .excelencia-texto {
-    width: 400px;
+    width: 250px;
     font-size: 20px;
-    padding: 70px;
+    margin-right: 20px;  
   }
   .texto-estrela {
     width: 90%;
@@ -657,6 +635,7 @@ body {
     text-align: center;
     align-self: center;
     margin-left: 70px;
+    margin-bottom: 10px;
   }
 
   .estrelas-img {
@@ -704,8 +683,9 @@ body {
     width: 50%;
   }
 
-  /* MEDIA PÁGINA NOSSA EQUIPE */
+  /* -----------------------MEDIA PÁGINA NOSSA EQUIPE ------------------------*/
 
+  /* divs das fileiras foram colocadas em blocks para alinharem-se em colunas  */
   .fileira-um,
   .fileira-dois {
     display: block;
@@ -715,7 +695,10 @@ body {
     margin: auto;
   }
 
-  /* MEDIA PÁGINA NOSSOS PRODUTOS */
+  /*------------------------------- MEDIA PÁGINA NOSSOS PRODUTOS */
+
+  
+
   .linha-um,
   .linha-dois {
     display: flex;
@@ -743,7 +726,7 @@ body {
   }
 
 
-  /* MEDIA PÁGINA CONTATO ------------------------ */
+  /* ------------------MEDIA PÁGINA CONTATO ------------------------ */
 
   .info-contato{
     display: flex;

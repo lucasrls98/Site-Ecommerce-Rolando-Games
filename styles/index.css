@@ -765,8 +765,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 0;
-    justify-content: center;
-    padding-right: 18px;
+    justify-content: center;    
   }
 
   .form{

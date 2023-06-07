@@ -80,11 +80,11 @@ Agradecemos a oportunidade de desenvolver o projeto do Rolando Games e esperamos
 Atenciosamente,
 Squad 3 - Códigos do Amanhã EBANX 2023.
 
-Lucas Rolando
-Emerson Chagas
-Igor Pinto
-Renato Miranda
-Laís Müller
+Lucas Rolando,
+ Emerson Chagas,
+ Igor Pinto,
+ Renato Miranda,
+ Laís Müller
 
 
 

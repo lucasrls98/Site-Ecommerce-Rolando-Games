@@ -337,6 +337,13 @@ body {
   padding: 0 0.5rem;
 }
 
+.texto-comprar:hover{
+  transform: scale(1.05);
+  transition: 0.4s;
+  background-color: var(--cor-paragrafo);
+  color: var(--cor-contraste);
+}
+
 .img-produto {
   width: 100%;
 }

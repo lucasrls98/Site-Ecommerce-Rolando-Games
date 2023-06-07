@@ -43,7 +43,7 @@ escolhas que o grupo tomou, usando o arquivo README.md no GitHub.
 - **README.md**: Este arquivo, contendo informações sobre o projeto.
 
 <p align="center">
-  <img src="images/folders-md.png" alt="Folders do projeto" width="500">
+  <img src="images/folders-md.png" alt="Folders do projeto" width="250">
 </p>
 
 

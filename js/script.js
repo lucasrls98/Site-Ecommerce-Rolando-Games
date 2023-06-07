@@ -60,6 +60,3 @@ function validarDados() {
         alert("Dados válidos! Enviando o formulário.");
     }
 }
-
-
-

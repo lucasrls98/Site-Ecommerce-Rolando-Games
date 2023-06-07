@@ -59,7 +59,8 @@ body {
   margin: 50px;
   width: 65%;
 }
-/* primeira section da page quem somos  */
+
+/* estilos .section-historia da page quem somos  */
 
 .section-historia {
   display: flex;
@@ -91,6 +92,8 @@ body {
 .historia-textos > p {
   font-size: 2rem;
 }
+
+/* section-qualidade estilos  */
 
 .section-qualidade {
   background-color: var(--cor-primaria);
@@ -137,6 +140,8 @@ body {
   width: 70%;
 }
 
+/* botão comprar da pagina quem somos  */
+
 .separacao-botao {
   width: 100%;
   display: flex;
@@ -167,6 +172,8 @@ body {
   background-color: var(--cor-destaque);
   color: #f5f5f5;
 }
+
+/* ESTILOS DO FOOTER GERAL   */
 
 .logo-footer {
   cursor: pointer;

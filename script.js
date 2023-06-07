@@ -1,22 +1,31 @@
 //SCRIPT DO CARROSSEL
 
+// inicialização do contador com o valor 1
 let count = 1;
+
+// marcar o radio button como 'checked'
 document.getElementById("radio1").checked = true;
 
+// configura um intervalo de 4 segundos para chamar a função 
 setInterval(function () {
     nextImage();
+}, 4000);
 
-}, 4000)
-
+// função para avançar para a próxima imagem do slider
 function nextImage() {
+    // incrementar o contador "count" para ir para a próxima imagem
     count++;
+
+    // aqui ele verifica se o contador "count" ultrapassou o número total de imagens
     if (count > 4) {
+        // se ultrapassou reseta o contador e volta para a primeira imagem
         count = 1;
     }
 
+    // marcar o radio button correspondente à imagem atual como (checked)
     document.getElementById("radio" + count).checked = true;
-
 }
+
 
 
 //SCRIPT DO FORMULÁRIO

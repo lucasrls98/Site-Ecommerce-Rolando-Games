@@ -6,7 +6,8 @@ Este é o repositório do projeto do site do e-commerce de games chamado Rolando
   <img src="images/rolando-games-md.png" alt="Descrição da Rolando Games" width="800">
 </div>
 
-
+ 
+ 
 O projeto precisava seguir os seguintes requisitos:
 
 ## Requisitos

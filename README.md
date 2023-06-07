@@ -72,7 +72,10 @@ Fique à vontade para explorar o código, sugerir melhorias ou entrar em contato
 Agradecemos a oportunidade de desenvolver o projeto do Rolando Games e esperamos que apreciem o resultado final.
 
 
-![Página Nossa Equipe](images/nossa-equipe-md.png)
+<p align="center">
+  <img src="images/nossa-equipe-md.png" alt="Página Nossa Equipe" width="600">
+</p>
+
 
 Atenciosamente,
 Squad 3 - Códigos do Amanhã EBANX 2023.

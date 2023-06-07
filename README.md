@@ -2,7 +2,7 @@
 
 Este é o repositório do projeto do site do e-commerce de games chamado Rolando Games. O objetivo desse projeto foi criar uma loja online para venda de jogos, atendendo aos requisitos solicitados. O site está em fase inicial de desenvolvimento e foi criado como parte da formação em front-end utilizando HTML, CSS e JavaScript.
 
-![Descrição da Rolando Games](images/rolando-games-md.png)
+<img src="images/rolando-games-md.png" alt="Descrição da Rolando Games" width="300">
 
 O projeto precisava seguir os seguintes requisitos:
 

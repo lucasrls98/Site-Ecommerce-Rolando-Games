@@ -698,8 +698,8 @@ body {
   /*------------------------------- MEDIA PÁGINA NOSSOS PRODUTOS */
 
   .slider{
-    margin: 0 auto;
-    width: 500px;
+    margin: 20px auto;
+    width: 400px;
     height: 133px;
     overflow: hidden;
   }
@@ -721,14 +721,14 @@ body {
   }
   
   .slide img{
-    width: 500px;
+    width: 400px;
     
   }
   
   .manual-navigation{
     position: absolute;
-    width: 500px;
-    margin-top: -40px;
+    width: 400px;
+    margin-top: -50px;
     display: flex;
     justify-content: center;
   }
@@ -772,8 +772,8 @@ body {
   
   .navigation-auto{
     position: absolute;
-    width: 500px;
-    margin-top: 93px;
+    width: 400px;
+    margin-top: 83px;
     display: flex;
     justify-content: center;
   }
@@ -816,11 +816,15 @@ body {
   .produtos > h1 {
     display: flex;
     text-align: center;
-    margin: 100px 0px 0px 0px;
+    margin: 50px 0px 0px 0px;
   }
 
   #carrossel {
     margin-top: 50px;
+  }
+
+  .titulos-produtos{
+    width: 200px;
   }
 
 

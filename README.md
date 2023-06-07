@@ -38,6 +38,8 @@ escolhas que o grupo tomou, usando o arquivo README.md no GitHub.
 - **contato.html**: Arquivo HTML da página "Formulário de Contato".
 - **README.md**: Este arquivo, contendo informações sobre o projeto.
 
+![Folders do projeto](images/folders-md.png)
+
 ## Descrição do Projeto
 O site do Rolando Games é um e-commerce de games que está iniciando suas atividades. Possui 4 páginas principais:
 

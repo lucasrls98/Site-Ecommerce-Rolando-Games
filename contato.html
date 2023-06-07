@@ -37,6 +37,7 @@
             <h2><img class="icones" src="./images/endereço.png"> Curitiba, Paraná</h2>
 
         </div>
+        
         <div class="segunda info-contato">
             <form class="form">
                 <label for="nome">Nome:</label>
@@ -45,13 +46,14 @@
                 <input type="email" id="email" name="email" required placeholder="Insira um e-mail válido">
                 <label for="mensagem">Mensagem:</label>
                 <textarea id="mensagem" name="mensagem" required placeholder="Escreva sua mensagem"></textarea>
-
+            
                 <div class="buttons">
-                    <button id="submit" type="submit">Enviar</button>
+                    <button id="submit" type="button" onclick="validarDados()">Enviar</button>
                 </div>
+            </form>
+                  
         </div>
 
-        </form>
 
     </section>
     <footer class="rodape">
@@ -74,7 +76,7 @@
         </nav>
     </footer>
 
-    <script src="./script.js"></script>
+    <script src="./script-teste.js"></script>
 </body>
 
 </html>

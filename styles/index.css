@@ -394,7 +394,7 @@ body {
   width: 100%;
   height: 45px;
   background-color: #D2E6EA;
-  color: var(--cor-contraste);
+  color: var(--cor-paragrafo);
   border: none;
   padding: 10px 20px;
   cursor: pointer;
@@ -405,16 +405,21 @@ body {
   font: var(--font-titulo);
   line-height: 1.5rem;
   font-family:var(--font-titulo);
+  
 }
 
 #mensagem {
   width: 100%;
   height: 80px;
   background-color: #D2E6EA;
-  color: var(--cor-contraste);
+  color: var(--cor-paragrafo);
   border: none;
   padding: 10px 20px;
   cursor: pointer;
+}
+
+#id{
+  background-color: #D2E6EA;
 }
 
 .icones {
